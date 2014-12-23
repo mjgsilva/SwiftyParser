@@ -12,9 +12,15 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       NetworkHandler.getDataWithSuccess { (githubData) -> Void in
+            let json = JSON(data: githubData)
+            if let repoName = json[0]["name"].stringValue {
+                println("\(repoName)")
+            }
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
