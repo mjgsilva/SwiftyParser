@@ -9,14 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var repos = [Repository]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       NetworkHandler.getDataWithSuccess { (githubData) -> Void in
+        NetworkHandler.getDataWithSuccess { (githubData) -> Void in
             let json = JSON(data: githubData)
-            if let repoName = json[0]["name"].stringValue {
-                println("\(repoName)")
+            
+
+            if let repoArray = json.arrayValue {
+                
+                for repoDict in repoArray {
+                    var repoName: String? = repoDict["name"].stringValue
+                    var repoDescription: String? = repoDict["description"].stringValue
+                    var repoLanguage: String? = repoDict["language"].stringValue
+                    var repoURL: String? = repoDict["url"].stringValue
+
+                    var repo = Repository(name: repoName, descript: repoDescription, language: repoLanguage, url: repoURL)
+                    self.repos.append(repo)
+                }
+            }
+            
+            for repoArray in self.repos {
+                println(repoArray)
             }
         }
     }
@@ -25,7 +42,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

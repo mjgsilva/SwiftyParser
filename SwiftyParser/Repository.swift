@@ -20,9 +20,9 @@ class Repository: NSObject, Printable {
         self.language = language ?? ""
         self.url = url ?? ""
     }
-    
+        
     override var description: String {
-        return "Repository: \(name), written in \(language): \(description). Link: \(url)"
+        return "Repository: \(name)\nDesc: \(descript)\nLanguage: \(language)\nURL: \(url)"
     }
     
 }

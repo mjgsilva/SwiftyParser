@@ -15,7 +15,7 @@
 		AC5A7AA91A48FA8300AFC2AB /* SwiftyParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7AA81A48FA8300AFC2AB /* SwiftyParserTests.swift */; };
 		AC5A7AB31A49C1C200AFC2AB /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7AB21A49C1C200AFC2AB /* Repository.swift */; };
 		AC5A7AB51A49C59700AFC2AB /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7AB41A49C59700AFC2AB /* NetworkHandler.swift */; };
-		AC5A7ABF1A49D5B400AFC2AB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7ABE1A49D5B400AFC2AB /* SwiftyJSON.swift */; };
+		ACB661BA1A4A6A4D0037369E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB661B91A4A6A4D0037369E /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		AC5A7AA81A48FA8300AFC2AB /* SwiftyParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyParserTests.swift; sourceTree = "<group>"; };
 		AC5A7AB21A49C1C200AFC2AB /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		AC5A7AB41A49C59700AFC2AB /* NetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
-		AC5A7ABE1A49D5B400AFC2AB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		ACB661B91A4A6A4D0037369E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +83,15 @@
 		AC5A7A8F1A48FA8200AFC2AB /* SwiftyParser */ = {
 			isa = PBXGroup;
 			children = (
-				AC5A7ABE1A49D5B400AFC2AB /* SwiftyJSON.swift */,
+				ACB661B91A4A6A4D0037369E /* SwiftyJSON.swift */,
 				AC5A7A921A48FA8200AFC2AB /* AppDelegate.swift */,
 				AC5A7A941A48FA8200AFC2AB /* ViewController.swift */,
+				AC5A7AB21A49C1C200AFC2AB /* Repository.swift */,
+				AC5A7AB41A49C59700AFC2AB /* NetworkHandler.swift */,
 				AC5A7A961A48FA8200AFC2AB /* Main.storyboard */,
 				AC5A7A991A48FA8200AFC2AB /* Images.xcassets */,
 				AC5A7A9B1A48FA8300AFC2AB /* LaunchScreen.xib */,
 				AC5A7A901A48FA8200AFC2AB /* Supporting Files */,
-				AC5A7AB21A49C1C200AFC2AB /* Repository.swift */,
-				AC5A7AB41A49C59700AFC2AB /* NetworkHandler.swift */,
 			);
 			path = SwiftyParser;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 				AC5A7A951A48FA8200AFC2AB /* ViewController.swift in Sources */,
 				AC5A7A931A48FA8200AFC2AB /* AppDelegate.swift in Sources */,
 				AC5A7AB51A49C59700AFC2AB /* NetworkHandler.swift in Sources */,
-				AC5A7ABF1A49D5B400AFC2AB /* SwiftyJSON.swift in Sources */,
+				ACB661BA1A4A6A4D0037369E /* SwiftyJSON.swift in Sources */,
 				AC5A7AB31A49C1C200AFC2AB /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
